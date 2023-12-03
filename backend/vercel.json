@@ -1,7 +1,7 @@
 {
     "redirects":[
         {
-            "source":"server.js,
+            "source":"server.js",
             "destination":"@vercel/node"
         },
         {
