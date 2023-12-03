@@ -17,7 +17,7 @@ export default function Button({
     const navigate=useNavigate();
     const deletepost=(e)=>{
         if(authStatus){
-            const response=axios.post("http://localhost:6060/deletepost",{
+            const response=axios.post("https://blog-editor-three.vercel.app//deletepost",{
                 id:slug
             }).then((datas)=>{
                 console.log("data is "+JSON.stringify(datas.data.posts))
