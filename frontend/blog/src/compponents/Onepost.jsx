@@ -12,7 +12,7 @@ const Onepost = () => {
     
     useEffect(() => {
             if(authStatus){
-                const response=axios.post("https://blog-editor-three.vercel.app/getpost",{
+                const response=axios.post("http://localhost:6060/getpost",{
                     id:slug
                 }).then((datas)=>{
                     // datas.data.posts.forEach((ele)=>console.log("ele is "+ele))
