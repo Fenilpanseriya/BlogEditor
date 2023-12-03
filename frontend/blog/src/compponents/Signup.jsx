@@ -20,7 +20,7 @@ function Signup() {
             console.log("data in sign up is "+ data.email)
             console.log(data.password);
             console.log(data.name);
-            const response=await axios.post("http://localhost:6060/register",{
+            const response=await axios.post("https://blog-editor-three.vercel.app/register",{
                 email:data.email,
                 password:data.password,
             },
