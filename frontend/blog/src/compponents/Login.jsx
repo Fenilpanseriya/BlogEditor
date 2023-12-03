@@ -18,7 +18,7 @@ function Login() {
         setError("")
         try {
             console.log(data);
-            const response=await axios.post("http://localhost:6060/login",{
+            const response=await axios.post("https://blog-editor-three.vercel.app//login",{
                 email:data.email,
                 password:data.password,
                 headers: {
