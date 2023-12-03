@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 dotenv.config();
-app.get("/",(req,res)=>{
+app.get("https://blog-editor-three.vercel.app/",(req,res)=>{
   app.use(express.static(path.resolve(__dirname,"build")));
   res.sendFile(path.resolve(__dirname,"build","index.html"));
   
