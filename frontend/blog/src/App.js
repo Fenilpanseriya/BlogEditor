@@ -30,7 +30,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/add-post" element={<AddPost />} />
         <Route path="/posts/:slug" element={<Onepost/>}/>
-        <Route path="/" element={<First/>}/>
+        <Route path="https://blog-editor-three.vercel.app/" element={<First/>}/>
       </Routes>
      
       
