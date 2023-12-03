@@ -10,7 +10,7 @@ function AllPosts() {
     const navigate=useNavigate();
     useEffect(() => {
             if(authStatus){
-                const response=axios.get("https://blog-editor-three.vercel.app/getposts").then((datas)=>{
+                const response=axios.get("http://localhost:6060/getposts").then((datas)=>{
                     setPosts(datas.data.posts)
                     return datas;
                 }).catch((err)=>{
