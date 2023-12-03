@@ -1,15 +1,27 @@
 {
-    "version":2,
-    "builds":[
+    "redirects":[
         {
-            "src":"server.js",
-            "use":"@vercel/node"
+            "source":"server.js,
+            "destination":"@vercel/node"
+        },
+        {
+            "source":"build/**",
+            "destination":"@vercel/static"
+        },
+        {
+            "source":"/posts",
+            "destination":"@vercel/static"
         }
     ],
     "routes":[
         {
-            "src":"/(.*)",
-            "dest":"/server.js"
+            "source":"/posts/(.*)",
+            "destination":"@vercel/static"
+        },
+        {
+            "source":"/(.*)",
+            "destination":"/server.js"
         }
     ]
 }
+
