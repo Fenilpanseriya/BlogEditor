@@ -9,7 +9,7 @@ function EditPost() {
 
     useEffect(() => {
         if (slug) {
-            const response=axios.get("http://localhost:6060/getPost/:slug").then((post)=>{
+            const response=axios.get("https://blog-editor-three.vercel.app/getPost/:slug").then((post)=>{
                 setPosts(post);
             }).catch((err)=>{
                 setPosts("")
