@@ -28,7 +28,7 @@ function Postform({ post ,content,title ,slug ,status}) {
         console.log((data.image[0].name))
         
         
-        const response=await axios.post("https://blog-editor-three.vercel.app//createPost",{
+        const response=await axios.post("http://localhost:6060/createPost",{
             image:data.image[0].name,
             content:data.content,
             title:data.title,
