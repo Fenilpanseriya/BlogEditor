@@ -2,7 +2,7 @@
   "version": 2,
   "builds":[
     {
-      "src":"backend/server.js",
+      "src":"/server.js",
       "dest":"@vercel/node"
     },
     {
@@ -15,16 +15,16 @@
   ],
   "routes":[
     {
-      "src":"/backend/(.*)",
-      "dest":"/backend/server.js",
+      "src":"/(.*)",
+      "dest":"/server.js",
     },
     {
       "src":"^/static/(.*)",
-      "dest":"/frontend/static/$1"
+      "dest":"/build/static/$1"
     },
     {
-      "src":"/(.*)",
-      "dest":"/frontend/index.html"
+      "src":"*",
+      "dest":"/build/index.html"
     }
   ]
   
